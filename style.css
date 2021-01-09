@@ -1,0 +1,194 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+body
+{                                   
+    font-family: 'Raleway', sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color:#0065FC;
+}
+header                              /* HEADER */
+{
+    width: 1440px;
+    margin: auto;
+}
+
+#conteneur1                            
+{
+    display: flex;
+    padding-bottom: 52px;
+    padding-left: 52px;
+    padding-top: 52px;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav1 li
+{
+    display: inline;
+    margin-left: 47px;
+    padding-top: 10px;
+}
+#nav1 li:hover
+{
+    cursor: pointer;
+    border-top:solid #0065FC;
+    padding-top: 52px;
+}
+.elt1:nth-child(1)         /*LOGO*/
+{
+    flex:3;
+}
+ .elt1:nth-child(2)    /*NAVIGATION*/
+{ 
+    flex:2;
+     text-align: right;
+}
+ .elt1:nth-child(3) /*INSCRIPTION*/
+{
+     flex:0;
+     font-weight: bold;
+     text-align: right;
+     margin-right: 72px;
+     margin-left: 47px;
+}
+.ins:hover
+{
+    cursor: pointer;
+    border-top:solid #0065FC;
+    padding-top: 52px; 
+}
+section                         /* SECTION RECHERCHE */
+{
+    width: 1440px;
+    margin: auto;
+
+}
+h1{
+    font-size: 1.4em;
+    padding-left: 52px;
+    padding-bottom: 20px;
+}
+h1+p
+{
+    padding-left: 52px;
+    font-size: 1.05em;
+}
+
+#contsearch    /* CONTENEUR 'recherche' */
+{
+    display: flex;
+    padding-top: 23px;
+    margin-bottom: 30px;
+}
+.icone_map
+{
+    height: 30px;
+    width: 48px;
+    margin-left: 52px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+form.formulaire input[type=text]    /* formulaire "recherche" */
+{          
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width:215px;
+    border: solid 1px #f2f2f2;
+}
+form.formulaire button  /*BOUTON RECHERCHE*/
+{ 
+    height: 54px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background:#0065FC;
+    color: white;
+    font-size:1.4em;
+    cursor: pointer;
+    border: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+}
+form.formulaire button:hover
+{
+    background: #0b7dda;
+}
+#conteneur2                         /* SECTION Filtres */
+{                                
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+#titre_filtre
+{
+    font-size: 1.3em;
+    padding-left: 52px;
+}
+#nav2
+{
+    padding-left: 27px;
+}
+#nav2 li{
+    display: inline;
+    border-top: solid #f2f2f2;
+    border-bottom: solid #f2f2f2;
+    border-right: solid #f2f2f2;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin-right: 14px;
+}
+
+.icones1           /*Icones filtres */
+{                            
+    background-color: #deebff;
+    color: #0065FC;
+    padding: 13px;
+    margin-right: 15px;
+    border-radius: 300px;   
+}
+
+.icones1bis                          /*Icones bonhomme */
+{ 
+    background-color: #deebff;
+    color: #0065FC;
+    margin-right:15px; 
+    padding: 13px 16px 13px 16px;
+    border-radius: 300px;  
+}
+.filter:hover
+{
+    cursor: pointer;
+    background-color: #f2f2f2 ;
+}
+#conteneur2+p
+{
+    padding-left: 52px;
+}
+
+.icones 
+{
+    color: #0065FC;
+    float: left;
+    margin-left: 52px;
+    margin-right: 14px;
+    padding: 5px 10px 5px 10px;
+    border:solid #f2f2f2;
+    border-radius: 300px;
+}
+.inf_p
+{
+    margin-top: 5px ;
+}
