@@ -5,7 +5,7 @@
 }
 #bloc_page
 {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
 }
 body
@@ -49,7 +49,7 @@ a
  .elt1:nth-child(2)    /*NAVIGATION*/
 { 
     flex:2;
-     text-align: right;
+    text-align: right;
 }
  .elt1:nth-child(3) /*INSCRIPTION*/
 {
@@ -65,9 +65,10 @@ a
     border-top:solid #0065FC;
     padding-top: 52px; 
 }
+
 section                         /* SECTION RECHERCHE */
 {
-    padding-left: 52px;
+    padding-left:52px;
 }
 .trvz{              /* Titre SECTION RECHERCHE */
     font-size: 22px;
@@ -134,6 +135,7 @@ form.formulaire button:hover
 #nav2
 {
     padding-left: 27px;
+    width:100%
 }
 #nav2 li{
     display: inline;
@@ -145,8 +147,8 @@ form.formulaire button:hover
     font-size: 1.2em;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 15px;
-    margin-right: 14px;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .icones1           /*Icones filtres */
@@ -203,7 +205,7 @@ form.formulaire button:hover
     margin-right: 40px;
 }
 .elt3 h1{                            /* titre "hebergements" */
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 47px;
     margin-bottom: 27px;
     font-size: 1.4em;
@@ -212,19 +214,22 @@ form.formulaire button:hover
     display: flex;
 }
 .img1{                          /* IMG Hebergement */
-    width:100%;
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
 }
 .tag1{                           /* Etiquettes img left */
     background-color: white;
+    max-width: 248px;
     box-shadow: 1px 1px 12px rgb(182, 181, 181);
     margin-bottom: 30px;
     border-radius: 20px;
-    margin-left: 25px;
+    margin-left: 40px;
     padding: 5px 5px 0px 5px;
 }
  .tag2{                           /* Etiquettes img center */
     background-color: white;
+    max-width: 248px;
+
     box-shadow: 1px 1px 12px rgb(182, 181, 181);
     margin-bottom: 30px;
     border-radius: 20px;
@@ -236,10 +241,11 @@ form.formulaire button:hover
  }
  .tag3{                           /* Etiquettes img right */
     background-color: white;
+    max-width: 248px;
     box-shadow: 1px 1px 12px rgb(182, 181, 181);
     margin-bottom: 30px;
     border-radius: 20px;
-    margin-right: 25px;
+    margin-right: 40px;
     padding: 5px 5px 0px 5px;
 
  }
@@ -249,6 +255,7 @@ form.formulaire button:hover
     margin-bottom: 5px;
     margin-top: 5px;
     padding-left: 10px;
+    white-space: nowrap;
 }
 .tag2 h2{                        /* Nom hôtel ctr*/
     color: black;
@@ -256,6 +263,8 @@ form.formulaire button:hover
     margin-bottom: 5px;
     margin-top: 5px;
     padding-left: 10px;
+    white-space: nowrap;
+
 }
 .tag3 h2{                        /* Nom hôtel right*/
     color: black;
@@ -263,6 +272,8 @@ form.formulaire button:hover
     margin-bottom: 5px;
     margin-top: 5px;
     padding-left: 10px;
+    white-space: nowrap;
+
 }
 .mots{        
     color: black;             /* margin "nuit à partir" */
@@ -282,7 +293,7 @@ a[title*="Afficher"]{           /* 'afficher plus */
 #aff_plus{
     font-size: 1.1em;
     margin-bottom: 50px;
-    margin-left: 35px;
+    margin-left: 45px;
     margin-top: 15px;
 }
 #conteneur4{                    /* Titres "les plus pop" + icones */
@@ -293,21 +304,21 @@ a[title*="Afficher"]{           /* 'afficher plus */
     flex-direction: column;
  }
 #arrow{                         /* icone flèche */
-    margin-left: 116px;
+    margin-left: 117px;
     margin-top: 50px;
 }
 .img2{                      /* images 'les plus pop' */
-    width:100%;
     border-radius: 20px 0px 0px 20px;
     padding: 5px 5px 0px 5px;
 }
 .tag4 {      
     display: flex;  /* Etiquettes des images */
+    max-width:343px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 12px rgb(182, 181, 181);
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 37px;
+    margin-right: 37px;
     margin-bottom: 30px;
 }
 .tag4 p{                    /*Img hotel 'pop'*/
@@ -316,9 +327,10 @@ a[title*="Afficher"]{           /* 'afficher plus */
 .tag4 h2{                        /* Nom hôtel 'les plus pops' */
     color: black;
     font-size: 0.9em;
-    padding-right: 60px;
+    margin-right: 60px;
     margin-top: 20px;
     margin-bottom: 13px;
+    white-space: nowrap;
 }
 .mots_bis{              /* "Nuits à partir"*/
     color:black;
@@ -327,13 +339,16 @@ a[title*="Afficher"]{           /* 'afficher plus */
 }
 .star_st_pop{                     /* Padding 1ere étoile */
     padding-left: 3px;
+    padding-bottom: 14px;
 }
 #conteneur5{                    /* Activités à Marseille */
     display: flex;
 }
+
 #conteneur5 img
 {
     border-radius: 20px 20px 0px 0px;
+    max-width: 1440px;
 }
 .elt5{
     margin-right: 33px;
@@ -351,6 +366,13 @@ a[title*="Afficher"]{           /* 'afficher plus */
     border-radius: 20px;
     margin-bottom: 25px;
  }
+ @media all and (min-width:1210px) and (max-width:1340px)
+ {
+     .tag5
+     {
+         margin-bottom: 20px;
+     }
+ }
 .tag5 p{
     margin-top: 0px;
  }
@@ -361,11 +383,22 @@ a[title*="Afficher"]{           /* 'afficher plus */
     margin-top: 22px;
     margin-bottom: 22px;
 }
+.tag5 img{
+    width: 100%;
+
+}
 #conteneur6{                    /* Footer */
     display: flex;
     background-color: #f2f2f2;
     margin-top: 35px;
     padding-top: 48px;
+    width: 100%;
+}
+@media all and (min-width: 1460px) 
+{
+    #conteneur6{
+        justify-content: space-around;
+    }
 }
 
 #conteneur6 p{
@@ -373,14 +406,14 @@ a[title*="Afficher"]{           /* 'afficher plus */
 }
 .elt6:nth-child(1){  /* A propos */
     padding-bottom:50px;
-    margin-left: 80px;
     margin-right: 225px;
+    margin-left: 80px;
 }
 .elt6:nth-child(2)
 {
     margin-right: 230px;
-
 }
+
 .footer_color
 {
    color: black;
