@@ -35,7 +35,7 @@ a
 #nav1 li
 {
     display: inline;
-    margin-left: 68px;
+    margin-left: 10%;
     padding-top: 10px;
 }
 #nav1 li:hover
@@ -59,8 +59,8 @@ a
      flex:0;
      font-weight: bold;
      text-align: right;
-     margin-left: 68px;
-     padding-right: 74px;
+     margin-left: 5%;
+     padding-right: 10%;
 }
 .ins:hover
 {
@@ -443,13 +443,12 @@ h3
     margin-bottom: 26px;
 }
 /* MOBILE */
-@media all and (max-width: 768px)           
+@media all and (max-width: 767px)           
                                         /* HEADER MEDIA MOBILE */
                                 
 {
     h1{
         font-size: 23px;
-
     }
     #conteneur1                            
     { 
@@ -496,26 +495,26 @@ h3
     }
     .heberg
     {
-        padding-left: 36px;
-        padding-right: 28px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .activ
     {
-        padding-left: 62px;
-        padding-right: 64px;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     .elt1:nth-child(1){
-        flex: none;
+        flex: 1 33%;
         padding-left: 20px;
-        margin-right: 20px;
         margin-bottom: 38px;
         margin-top: 25px;
     }
     .elt1:nth-child(2){
         order:3;
         color: #0065FC;
-        width: 100%;
-        flex: none;
+        max-width: 100%;
+        flex: 3;
+        white-space: nowrap;
         align-items: flex-end;
         padding-top: 0px;
         padding-bottom: 18px;
@@ -524,35 +523,41 @@ h3
     }
     .elt1:nth-child(3){
         order:2;
-        flex: none;
-        margin-left: 140px;
+        flex: 1;
+        margin-left: 0px;
+        margin-right: 20px;
         padding-right: 0px;
         margin-top: 40px;
     }
- /* Fin media mobile header*/
+ /* Fin mobile header*/
 
  /* Section 'Recherche' MOBILE */
     #recherche{
-        padding-left: 20px;
+        padding-left: 0px;
     }                               
 
     .trvz{              /* Titre SECTION RECHERCHE */
-    font-size: 23px;
+    font-size: 1.3em;
     padding-bottom: 16px;
+    padding-left: 20px;
     }
-    #contsearch    /* CONTENEUR 'recherche' */ 
+
+    h1 + p
     {
-    margin-bottom: 34px;
+    padding-left: 20px;
     }
+
     .icone_map{
-        height: 39px;
-        width: 52px;
+        height: 35px;
+        width: 50px;   
+        margin-left: 10px;     
     }
     form.formulaire input[type=text] {          /* formulaire "recherche" */
-        padding: 20px;
+        padding:15px;
+        padding-top: 20px;  
         font-size: 1.1em;
         font-weight: bold;
-        width:230px;
+        max-width:205px;
         border-top: solid 1px #f2f2f2;
         border-bottom: solid 1px #f2f2f2;
     }
@@ -562,8 +567,8 @@ h3
     }
     .glass{
         visibility: visible;
-        height: 38px;
-        width: 65px;
+        height: 35px;
+        width: 60px;
         text-align: center;
         padding-top: 23px;
         border-top: solid 1px #f2f2f2;
@@ -592,6 +597,7 @@ h3
     #titre_filtre
     {
         margin-right: 0px;
+
         margin-bottom: 18px;
     }
     #nav2
@@ -606,12 +612,22 @@ h3
         padding-top: 0px;
         font-size: 1em;
         padding-bottom: 0px;
-        margin-right: 15px;
+        margin-right: 16px;
+        padding-right: 5px;
+
     }
     #nav2 li:active
     {
         cursor: pointer;
         background-color: #f2f2f2 ;
+    }
+    .icones1           /*Icones filtres */
+    {                            
+        margin-right: 3px;    
+    }
+    .icones1bis                          /*Icones bonhomme */
+    { 
+        margin-right:3px; 
     }
     .filter1{
         float: left;
@@ -626,7 +642,6 @@ h3
     .icones                 /* Icones 'informations'*/
     {
         border:solid 3px #f2f2f2;
-
     }
     .inf_p              /* Texte après icones 'inf'*/
     {
@@ -661,21 +676,24 @@ h3
         padding-bottom: 35px ;
     }
     .elt3 h1{                            /* titre "hebergements" / "les plus pops" */
-        padding-left: 20px;
+        padding-left: 16px;
         padding-top: 40px;
         margin-bottom: 25px;
-        font-size: 23px;
+        font-size: 20px;
     }
     #arrow{                         /* icone flèche */
-        margin-left: 100px;
-        margin-top: 45px;
+        margin-left: 80px;
+        margin-top: 48px;
     }
     .tag4 {      
                                      /* Etiquettes des images les plus pops */
-        max-width:334px;
-        margin-left: 17px;
-        margin-right: 22px;
+        max-width:315px;
+        margin-left:auto;
+        margin-right: auto;
         margin-bottom: 30px;
+    }
+    .tag4 p{                    /*Img hotel 'pop'*/
+        margin-right: 10px;
     }
     .elt3 h1{                            /* titre "hebergements" */
         padding-left: 20px;
@@ -684,20 +702,20 @@ h3
         font-size: 21px;
     }
     .tag1{                           /* Etiquettes img hebergments */
-        max-width: 337px;
+        max-width: 320px;
         margin-bottom: 12px;
         margin-left: auto;
         margin-right: auto;
 
     }
     .tag2{                           /* Etiquettes img hebergements */
-        max-width: 337px;
+        max-width: 320px;
         margin-bottom: 12px;
         margin-left: auto;
         margin-right: auto;
     }
      .tag3{                           /* Etiquettes img heb */
-        max-width: 337px;
+        max-width: 320px;
         margin-bottom: 12px;
         margin-left: auto;
         margin-right: auto;   
@@ -713,12 +731,22 @@ h3
     /* Activités à Marseille */ 
     #activites
     {
-        padding-left: 20px;
+        padding-left: 0px;    
+    }
+    #conteneur5 img
+    {
+        border-radius: 20px 20px 0px 0px;
+        max-width: 385px;
+    }
+    .elt5{              /* element du conteneur */
+        margin-right: auto;
+        margin-left: auto;
+
     }
     #act{           /* Titre 'act' */
         margin-top: 0px;
         margin-bottom: 28px;
-        padding-left: 0px;
+        padding-left: 20px;
         font-size: 1.1em;
     }
     #conteneur5{                     
@@ -727,6 +755,7 @@ h3
     #conteneur6{                    /* Footer */
         display: flex; 
         flex-direction: column;
+        margin-top: 48px;
     }
     .elt6:nth-child(1){
         margin-left: 30px;
@@ -742,6 +771,5 @@ h3
         margin-left: 30px;
         margin-right:0px;
         padding-bottom:50px;
-
     }
 }
