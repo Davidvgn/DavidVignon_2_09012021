@@ -442,15 +442,19 @@ h3
 {
     margin-bottom: 26px;
 }
-/* MOBILE */
-@media all and (max-width: 767px)           
+                                                /* MOBILE */
+@media all and (max-width: 767px) 
+
                                         /* HEADER MEDIA MOBILE */
                                 
 {
+    #bloc_page{
+        overflow-x: hidden;
+    }
     h1{
         font-size: 23px;
     }
-    #conteneur1                            
+    #conteneur1      /* Header */                      
     { 
         padding-bottom: 0px;
         flex-wrap: wrap;
@@ -470,25 +474,20 @@ h3
         margin-left: 0px;
         padding-top: 0px;
     }
-    #nav1 li:active
+   #nav1 li:active
     {
-        cursor: pointer;
-        color: #0065FC;
-        border-top:none;
         padding-bottom: 18px;
         border-bottom: solid #0065FC;
-        padding-top: 0px;
     }
     #nav1 li:hover
     {
-        color: #0065FC;
         border-top:none;
         padding-bottom: 18px;
         border-bottom: solid #0065FC;
         padding-top: 0px;
     }
     a:active{
-        color: #0065FC;
+       color: #0065FC;
     }
     a:hover{
         color: #0065FC;
@@ -533,31 +532,26 @@ h3
 
  /* Section 'Recherche' MOBILE */
     #recherche{
-        padding-left: 0px;
+        padding-left: 20px;
     }                               
 
     .trvz{              /* Titre SECTION RECHERCHE */
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-bottom: 16px;
-    padding-left: 20px;
-    }
-
-    h1 + p
-    {
-    padding-left: 20px;
+    padding-right: 30px;
     }
 
     .icone_map{
         height: 35px;
         width: 50px;   
-        margin-left: 10px;     
+        /*margin-left: 10px;*/     
     }
     form.formulaire input[type=text] {          /* formulaire "recherche" */
         padding:15px;
         padding-top: 20px;  
         font-size: 1.1em;
         font-weight: bold;
-        max-width:205px;
+        max-width:265px;
         border-top: solid 1px #f2f2f2;
         border-bottom: solid 1px #f2f2f2;
     }
@@ -573,7 +567,7 @@ h3
         padding-top: 23px;
         border-top: solid 1px #f2f2f2;
         border-bottom: solid 1px #f2f2f2;
-        margin-left: -46px;
+        margin-left: -26px;
         color: white;
         border-radius:20px;
         background-color: #0065FC;
@@ -582,10 +576,10 @@ h3
         background: #0b7dda;
     }
 
-    #filtres{
+
+    #filtres{                          /* Fin Section Recherche */
         padding-left: 20px;
-    } 
-                                    /* Fin Section Recherche */
+    }                               
 
        /* SECTION Filtres */                             
     #conteneur2                        
@@ -597,7 +591,6 @@ h3
     #titre_filtre
     {
         margin-right: 0px;
-
         margin-bottom: 18px;
     }
     #nav2
@@ -613,7 +606,7 @@ h3
         font-size: 1em;
         padding-bottom: 0px;
         margin-right: 16px;
-        padding-right: 5px;
+        padding-right: 20px;
 
     }
     #nav2 li:active
@@ -623,11 +616,11 @@ h3
     }
     .icones1           /*Icones filtres */
     {                            
-        margin-right: 3px;    
+        margin-right: 10px;    
     }
     .icones1bis                          /*Icones bonhomme */
     { 
-        margin-right:3px; 
+        margin-right:10px; 
     }
     .filter1{
         float: left;
@@ -658,7 +651,6 @@ h3
     #conteneur3{                            /* Conteneur "hébergements" - "les plus pop" */
         flex-direction: column;
         margin-top: 40px;
-
     }
     .img1{                          /* IMG Hebergement */
         max-width: 337px;
@@ -772,4 +764,54 @@ h3
         margin-right:0px;
         padding-bottom:50px;
     }
+}
+@media all and (max-width: 374px)  /* Mobile S */
+{
+     /* Section 'Recherche' MOBILE */
+     #recherche{
+        padding-left: 0px;
+    }                               
+    .trvz{              /* Titre SECTION RECHERCHE */
+        font-size: 1.2em;
+        padding-left: 20px;
+
+        }
+    h1 + p{
+        font-size: 0.9em;
+        padding-left: 20px;
+
+    }
+    .icone_map{
+  
+        margin-left: 10px;
+    }
+    form.formulaire input[type=text] {          /* formulaire "recherche" */
+        max-width:175px;
+    }
+     /* SECTION Filtres */                             
+     #nav2
+     {
+         padding-left: 0px;
+     }
+     #nav2 li{
+
+         padding-top: 0px;
+         font-size: 0.9em;
+         margin-right: 10px;
+         padding-right: 10px;
+ 
+     }
+     #nav2 li:active
+     {
+         cursor: pointer;
+         background-color: #f2f2f2 ;
+     }
+     .icones1           /*Icones filtres */
+     {                            
+         margin-right: 5px;    
+     }
+     .icones1bis                          /*Icones bonhomme */
+     { 
+         margin-right:5px; 
+     }
 }
