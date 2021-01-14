@@ -109,8 +109,9 @@ form.formulaire input[type=text]    /* formulaire "recherche" */
     border-bottom: solid 1px #f2f2f2;
     border-left: none;
     border-right: none;
-
-
+}
+input:focus {           /* empeche le form de se mettre en bleu quand on clique dessus */
+    outline:none;
 }
 .glass{
     visibility: collapse;
@@ -264,7 +265,6 @@ form.formulaire button:hover
     border-radius: 20px;
     margin-right: 40px;
     padding: 5px 5px 0px 5px;
-
  }
 .tag1 h2{                        /* Nom hôtel lft*/
     color: black;
@@ -281,7 +281,6 @@ form.formulaire button:hover
     margin-top: 5px;
     padding-left: 10px;
     white-space: nowrap;
-
 }
 .tag3 h2{                        /* Nom hôtel right*/
     color: black;
@@ -290,7 +289,6 @@ form.formulaire button:hover
     margin-top: 5px;
     padding-left: 10px;
     white-space: nowrap;
-
 }
 .mots{        
     color: black;             /* margin "nuit à partir" */
@@ -327,6 +325,9 @@ a[title*="Afficher"]{           /* 'afficher plus */
 .img2{                      /* images 'les plus pop' */
     border-radius: 20px 0px 0px 20px;
     padding: 5px 5px 0px 5px;
+    min-height: 124px;
+    min-width: 122px;
+    width:100%
 }
 .tag4 {      
     display: flex;  /* Etiquettes des images */
@@ -442,8 +443,319 @@ h3
 {
     margin-bottom: 26px;
 }
-                                                /* MOBILE */
-@media all and (max-width: 767px) 
+
+@media all and (min-width:768px) and (max-width:1022px)               /* TABLETTE */
+{
+    #bloc_page{
+        overflow-x: hidden;
+    }
+    #conteneur1      /* Header */                      
+    { 
+        padding-bottom: 0px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content:flex-start;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .elt1:nth-child(1)         /*LOGO*/
+    {
+        flex:3;
+        padding-left: 20px;
+    }
+    .elt1:nth-child(1){
+        flex: 1;
+        padding-left: 20px;
+        margin-bottom: 38px;
+        margin-top: 25px;
+    }
+    .elt1:nth-child(2){
+        flex:1 100%;
+        order:3;   
+        color: #0065FC;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    .elt1:nth-child(3){
+        flex:1;
+        order:2;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top:45px;
+    }
+
+    #nav1 li{
+        margin-left: 9%;
+        padding-top: 0px;
+    }
+    .heberg
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .activ
+    {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    #nav1 li:hover
+    {
+        border-top:none;
+        padding-bottom: 18px;
+        border-bottom: solid #0065FC;
+        padding-top: 0px;
+    }
+
+    #recherche                         /* SECTION RECHERCHE */
+        {
+        padding-left:20px;
+        }
+    #filtres{
+        padding-left: 20px;
+    }
+    #conteneur2                         /* SECTION Filtres */
+    {                                
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    #titre_filtre
+    {
+        margin-bottom:20px;
+
+    }
+    #nav2 li{
+        align-items: center;
+        margin-bottom: 14px;
+        font-size: 1em;
+        margin-right: 6px;
+
+    }
+    .icones1           /*Icones filtres */
+    {                            
+        margin-right: 5px; 
+        margin-bottom: 30px;
+    }
+    .icones1bis                          /*Icones bonhomme */
+    { 
+        margin-right:5px; 
+    }
+    #nav2, ul{
+        padding-left: 0px;
+    }
+            
+    #hotel{                         /* Section Hotel */
+        padding-left: 0px;
+    }
+    #conteneur3
+    {
+        flex-wrap: wrap;
+    }
+    .elt3:nth-child(1){ /* hebergements */
+        order:2;
+        margin-right: 0px;
+        background-color: white;
+    }
+    .elt3:nth-child(2){ /* les plus pops*/
+        order:1;
+        padding-bottom: 35px ;
+        padding-left: 0px;
+        border-radius: 0px;
+    }
+    #cont4bis{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tag4{
+        margin-left: 30px;
+        margin-right: 20px;
+        max-width: 320px;
+    }
+    #arrow{                         /* icone flèche */
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    .bleu{
+        margin-left: 25%;
+        margin-top: 30px;
+    }
+     /* Activités à Marseille */ 
+    #activites
+     {
+         padding-left: 0px;    
+     }
+    #conteneur5 img
+    {
+         border-radius: 20px 20px 0px 0px;
+         max-width: 385px;
+     }
+    .elt5{              /* element du conteneur */
+         margin-right: auto;
+         margin-left: auto;
+ 
+     }
+     #act{           /* Titre 'act' */
+         margin-top: 0px;
+         margin-bottom: 28px;
+         padding-left: 20px;
+         font-size: 1.1em;
+     }
+    #conteneur5{    
+         flex-wrap: wrap;                 
+     }
+    #conteneur5 img
+     {
+         border-radius: 20px 20px 0px 0px;
+         max-height: 365px;
+     }
+    #conteneur6{                    /* Footer */
+        justify-content: space-between;
+        margin-top: 48px;
+
+    }
+    .elt6:nth-child(1){
+        margin-left: 20px;
+        margin-right:0px;
+    }
+    .elt6:nth-child(2){
+        margin-left: 0px;
+        margin-right:0px;
+        padding-bottom:50px;
+
+    }
+    .elt6:nth-child(3){
+        margin-left: 0px;
+        margin-right:20px;
+        padding-bottom:50px;
+    }
+
+}
+
+@media all and (min-width:1023px) and (max-width:1025px) 
+{
+    #filtres{
+        padding-left: 15px;
+    }
+    #nav2, ul{
+        padding-left: 0px;
+    }
+    #hotel{                         /* Section Hotel */
+        padding-left: 0px;
+    }
+    #conteneur3
+    {
+        flex-wrap: wrap;
+    }
+    .tag1{                           /* Etiquettes img left */
+        margin-bottom: 40px;
+        margin-left: 90px;
+    }
+    .tag2{                           /* Etiquettes img center */
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tag3{                           /* Etiquettes img right */
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    .elt3:nth-child(1){ /* hebergements */
+        order:2;
+        margin-right: 0px;
+        background-color: white;
+    }
+    .elt3:nth-child(2){ /* les plus pops*/
+        order:1;
+        padding-bottom: 35px ;
+        padding-left: 0px;
+        border-radius: 0px;
+    }
+    #cont4bis{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .tag4{
+        margin-left: 15px;
+        margin-right: 15px;
+        max-width: 310px;
+    }
+    .elt4{
+        width: 170px;
+
+    }
+    #arrow{                         /* icone flèche */
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+     /* Activités à Marseille */ 
+    #activites
+    {
+         padding-left: 0px;    
+    }
+    #conteneur5 img
+    {
+         border-radius: 20px 20px 0px 0px;
+         max-width: 385px;
+    }
+    .elt5{              /* element du conteneur */
+         margin-right: auto;
+         margin-left: auto;
+ 
+    }
+    /* Activités à Marseille */ 
+    #activites
+    {
+         padding-left: 0px;    
+    }
+    #conteneur5 img
+    {
+         border-radius: 20px 20px 0px 0px;
+         max-width: 385px;
+    }
+    .elt5{              /* element du conteneur */
+         margin-right: 0px;
+         margin-left: 130px; 
+    }
+    #act{           /* Titre 'act' */
+         margin-top: 0px;
+         margin-bottom: 28px;
+         padding-left: 20px;
+         font-size: 1.1em;
+    }
+    #conteneur5{    
+         flex-wrap: wrap;                 
+    }
+    #conteneur5 img
+    {
+         border-radius: 20px 20px 0px 0px;
+         max-height: 365px;
+    }
+    #conteneur6{                    /* Footer */
+        justify-content: space-between;
+        margin-top: 48px;
+
+    }
+    .elt6:nth-child(1){
+        margin-left: 20px;
+        margin-right:0px;
+    }
+    .elt6:nth-child(2){
+        margin-left: 0px;
+        margin-right:0px;
+        padding-bottom:50px;
+
+    }
+    .elt6:nth-child(3){
+        margin-left: 0px;
+        margin-right:20px;
+        padding-bottom:50px;
+    }
+
+}
+
+                                               /* MOBILE */
+@media all and (max-width: 420px) 
 
                                         /* HEADER MEDIA MOBILE */
                                 
@@ -544,7 +856,6 @@ h3
     .icone_map{
         height: 35px;
         width: 50px;   
-        /*margin-left: 10px;*/     
     }
     form.formulaire input[type=text] {          /* formulaire "recherche" */
         padding:15px;
