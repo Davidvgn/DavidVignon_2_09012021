@@ -92,20 +92,20 @@ h1+p    /* texte sous 'trouvez' */
 .icone_map
 {
     height: 30px;
-    width: 48px;
-    padding-top: 20px;
+    width: 49px;
+    padding-top: 18px;
     background-color: #f2f2f2;
     text-align: center;
     border: 2px solid #f2f2f2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 form.formulaire input[type=text]    /* formulaire "recherche" */
 {          
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 16px;
+    font-size: 1em;
     font-weight: bold;
-    width:215px;
+    width:207px;
     border-top: solid 1px #f2f2f2;
     border-bottom: solid 1px #f2f2f2;
     border-left: none;
@@ -120,15 +120,15 @@ input:focus {       /* empeche le form de se mettre en bleu quand on clique dess
 }
 form.formulaire button  /*BOUTON RECHERCHE*/
 { 
-    height: 54px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 51px;
+    padding-left: 18px;
+    padding-right: 18px;
     background:#0065FC;
     color: white;
-    font-size:1.4em;
+    font-size:1em;
     cursor: pointer;
     border: #0065FC;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
 }
 form.formulaire button:hover
 {
@@ -262,7 +262,6 @@ form.formulaire button:hover
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-
     padding: 5px 5px 0px 5px;
  }
  .tag3{       /* Etiquettes img right */
@@ -436,14 +435,19 @@ a[title*="Afficher"]{    /* 'afficher plus */
     background-color: #f2f2f2;
     margin-top: 35px;
     padding-top: 48px;
-    width: 100%;
 }
-@media all and (min-width: 1460px) /* adaptation footer pour Grand ecran */
+footer{
+    background-color: #f2f2f2;
+}
+@media all and (min-width: 1485px) /* adaptation footer pour Grand ecran */
     {
         #conteneur6{
-            justify-content: space-around;
-        }
+            margin-left: auto;
+            margin-right: auto;
+            width:1440px;
+                }
     }
+
 
 #conteneur6 p{
     margin-bottom:20px;
@@ -505,9 +509,16 @@ h3 /* Titre footer */
         margin-right: 0px;
         margin-top:45px;
     }
-
+    #nav1{ /*nav heb + act */
+        border-bottom: solid #f2f2f2;
+        padding-bottom: 18px;
+        text-align: center;
+    }
+    .a_nav1{
+        color:black;
+    }
     #nav1 li{  /* Hebergements - activites */
-        margin-left: 9%;
+        margin-left: 0px;
         padding-top: 0px;
     }
     .heberg /* element hébergement du nav1*/
@@ -520,6 +531,12 @@ h3 /* Titre footer */
         padding-left: 12%;
         padding-right: 12%;
     }
+    a:active{
+        color: #0065FC;
+     }
+     a:hover{
+         color: #0065FC;
+     }
     #nav1 li:hover
     {
         border-top:none;
@@ -527,7 +544,6 @@ h3 /* Titre footer */
         border-bottom: solid #0065FC;
         padding-top: 0px;
     }
-
     #recherche                                   /* SECTION RECHERCHE */
         {
         padding-left:20px;
@@ -710,6 +726,7 @@ h3 /* Titre footer */
     #nav1{ /*nav heb + act */
         border-bottom: solid #f2f2f2;
         padding-bottom: 18px;
+        text-align: center;
     }
     .a_nav1{
         color:black;
