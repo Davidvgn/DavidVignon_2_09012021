@@ -60,7 +60,7 @@ a
      font-weight: bold;
      text-align: right;
      margin-left: 5%;
-     padding-right: 10%;
+     padding-right: 3%;
 }
 .ins:hover          /* Inscription*/
 {
@@ -230,7 +230,7 @@ form.formulaire button:hover
     width: 420px;
 }
 .elt3 h1{     /* titre "hebergements" */
-    padding-left: 40px;
+    padding-left: 34px;
     padding-top: 47px;
     margin-bottom: 27px;
     font-size: 1.4em;
@@ -242,6 +242,12 @@ form.formulaire button:hover
     margin: auto;
     padding-left: 5px;
     padding-right: 5px;
+}
+.cn:nth-child(1){
+    margin-right:0px;
+}
+.cn:nth-child(3){
+    margin-left:0px;
 }
 .img1{       /* IMG Hebergement */
     border-radius: 20px 20px 0px 0px;
@@ -324,6 +330,7 @@ a[title*="Afficher"]{    /* 'afficher plus */
 }
 #conteneur4{      /* Titres "les plus pop" + icones */
     display: flex;
+    justify-content: space-between;
 }
 
 #cont4bis{      /* conteneur "les plus pops" */ 
@@ -334,7 +341,6 @@ a[title*="Afficher"]{    /* 'afficher plus */
     white-space: nowrap;
 }
 #arrow{        /* icone flèche */
-    margin-left: 20%;
     margin-right: 38px;
     margin-top: 50px;
 }
@@ -608,6 +614,9 @@ h3 /* Titre footer */
         margin-left: 0px;
         width:100%
 
+    }
+    #conteneur4{
+        justify-content: flex-start;
     }
     #cont4bis{ /* Conteneur 'Les plus pop' */
         display: flex;
