@@ -389,7 +389,16 @@ a[title*="Afficher"]{    /* 'afficher plus */
 #conteneur5{                    /* Section Activités à Marseille */
     display: flex;
 }
-
+.elt5:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.elt5:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #conteneur5 img /* Img Activités */
 {
     border-radius: 20px 20px 0px 0px;
@@ -410,9 +419,10 @@ a[title*="Afficher"]{    /* 'afficher plus */
     flex-direction: column;
     box-shadow: 1px 1px 12px rgb(182, 181, 181);
     border-radius: 20px;
-    margin-bottom: 25px;
-    margin-left: 20px;
+    margin: 10px;
+    white-space: nowrap;
  }
+
 .tag5 p{
     margin-top: 0px;
  }
@@ -420,23 +430,14 @@ a[title*="Afficher"]{    /* 'afficher plus */
     color: black;
     font-size: 1.1em;
     margin-left: 17px;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 .tag5 img{      /*img Activites */
     width: 100%;
 }
 .img3{  /*img Vieux Port */
-    min-height: 360px;
-}
-.img4{  /*Img Frioul */
-    min-height: 110px;
-}
-.img5{  /* Img Calanques */
-    min-height: 360px;
-}
-.img6{ /* Imgs Notre Dame + Pomègues */
-    min-height: 147px;
+    min-height: 334px;
 }
 
 #conteneur6{                                /* Footer */
