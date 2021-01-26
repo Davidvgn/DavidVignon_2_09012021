@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <title>Reservia</title>
+    </head>
+
+        <body>  
+        
+        <div id="bloc_page">
+            
+<!--HEADER-->    
+
+            <header>
+                <div id="conteneur1"> 
+
+                    <div class="elt1">
+                        <a href="/">
+                            <img id="logo" src="img/Reservia.svg" alt="logo" title="logo" />
+                        </a>
+                    </div><!--elt1-->
+
+                    <div class="elt1">
+                        <nav>
+                            <ul id="nav1">
+                                <li class="heberg"><a class="a_nav1" href="#heb">Hébergements</a></li>
+                                <li class="activ"><a class="a_nav1" href="#act">Activités</a></li>
+                            </ul>
+                        </nav>
+                    </div><!--elt1-->
+
+                    <div class="elt1">
+                        <a class="ins" href="construction.html">S'inscrire</a>                        
+                    </div><!--elt1-->
+
+                </div><!--Conteneur1-->
+            </header>
+
+<!--SECTION "Recherche"--> 
+
+            <section id="recherche">            
+                <h1 class="trvz">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+
+                        <div id="contsearch">   <!--FORMULAIRE-->
+
+                            <div class="ctsearch">
+                            <span class="icone_map fas fa-map-marker-alt fa-lg"></span>
+                            </div><!--ctsearch-->
+
+                            <div class="ctsearch">                           
+                                <form class="formulaire">
+                                    <input type="text" value="Marseille, France" name="search">
+                                </form>
+                            </div><!--ctsearch-->
+
+                            <div class="ctsearch">
+                                <form class="formulaire"><button>Rechercher</button>
+                                </form>
+                            </div><!--ctsearch-->
+                            
+                            <div class="ctsearch">
+                                <span class="glass fas fa-search fa-lg"></span> 
+                            </div><!--ctsearch-->
+
+            
+                        </div><!--Contsearch-->
+            </section>
+
+<!-- SECTION FILTRES-->
+
+            <section id="filtres">
+
+                <div id="conteneur2">   <!--FILTRES-->
+
+                    <div class="elt2">
+                        <h2 id="titre_filtre">Filtres</h2>
+                    </div><!--elt2-->
+
+                    <div class="elt2">
+                            <ul id="nav2">
+                                <li class="filter1"><span class="icones1 fas fa-money-bill-wave"></span>Économique</li>
+                                <li class="filter2"><span class="icones1bis fas fa-child"></span>Familial</li>
+                                <li class="filter3"><span class="icones1 fas fa-heart"></span>Romantique</li>
+                                <li class="filter4"><span class="icones1 fas fa-dog"></span>Animaux autorisés</li>
+                            </ul>
+                    </div><!--elt2-->
+
+                </div><!--conteneur2-->
+    
+                    <span class="icones fas fa-info fa-sm"></span>
+                    <p class="inf_p">Plus de 500 logements sont disponibles dans cette ville</p>
+
+            </section>
+
+<!--Section "Hotel"-->
+
+            <section id='hotel'>
+                <div id="conteneur3"> <!--HEBERGEMENTS / LES PLUS POPULAIRES-->
+
+                    <div class="elt3">                                                  <!--element 1 conteneur3 'HEBERGEMENT'-->
+                         <h1 id="heb">Hébergements à Marseille</h1>
+                       
+                            <div id="cntr"><!--conteneur HOTEL-->
+
+                                <div class="cn"><!--element 1 contr-->
+
+                                    <a href="construction.html">
+                                        <div class="tag1"><!--Etiquette hotel-->
+                                            <p class="img_bloc">
+                                                <picture>
+                                                    <source srcset="img/hebergements/cannebiere_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/cannebiere.jpg" alt="Photo 'Auberge La Cannebière'"/>
+                                                </picture>
+                                            </p>
+                                            <h2>Auberge La Cannebière</h2>                                               
+                                                    <p class="mots">Nuit à partir de 25€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="empty fas fa-star fa-xs"></span>
+                                        </div> <!--tag Etiquette hotel-->
+                                    </a>  
+
+                                    <a href="construction.html">
+                                        <div class="tag1">
+                                            <p class="img_bloc">
+                                                <picture>
+                                                    <source  srcset="img/hebergements/hotel_mer_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/hotel_mer.jpg" alt="Photo 'Hôtel de la mer'"/>
+                                                </picture>
+                                            </p>
+                                                <h2>Hôtel de la mer</h2>
+                                                    <p class="mots">Nuit à partir de 46€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="empty fas fa-star fa-xs"></span>
+                                                        <span class="empty fas fa-star fa-xs"></span>
+                                        </div> <!--tag-->
+                                    </a>
+
+                                </div> <!--cn element 1-->
+
+                                <div class="cn"><!--element 2 contr-->
+
+                                    <a href="construction.html"> 
+                                        <div class="tag2"> <!--Etiquette Hotel-->
+                                            <p class="img_bloc">
+                                                <picture>
+                                                    <source srcset="img/hebergements/hotel_port_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/hotel_port.jpg" alt="Photo 'Hotel du port'" />
+                                                </picture>
+                                            </p>
+                                                <h2>Hôtel du port</h2>                                                
+                                                    <p class="mots">Nuit à partir de 52€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                        </div> <!--tag Etiquette Hotel-->
+                                    </a>
+
+                                    <a href="construction.html">
+                                        <div class="tag2"><!--Etiquette Hotel-->
+                                            <p>
+                                                <picture>
+                                                    <source srcset="img/hebergements/panier_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/panier.jpg" alt="Photo 'Auberge le Panier'" />
+                                                </picture>
+                                            </p>
+                                                <h2>Auberge Le Panier</h2>                                                   
+                                                    <p class="mots">Nuit à partir de 23€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="empty fas fa-star fa-xs"></span>
+                                        </div> <!--tag Etiquette Hotel-->
+                                    </a>
+
+                                </div><!--cn element 2-->
+
+                                <div class="cn"><!--element 3 contr-->
+
+                                    <a href="construction.html">
+                                        <div class="tag3"><!--Etiquette Hotel-->
+                                            <p>
+                                                <picture>
+                                                    <source srcset="img/hebergements/mouettes_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/mouettes.jpg" alt="Photo 'Hôtel Les mouettes'" />
+                                                </picture>
+                                            </p>
+                                                <h2>Hôtel Les mouettes</h2>                                               
+                                                    <p class="mots">Nuit à partir de 76€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="empty fas fa-star fa-xs"></span>
+                                        </div> <!--tag Etiquette Hotel-->
+                                    </a>
+
+                                    <a href="construction.html">
+                                        <div class="tag3"><!--Etiquette Hotel-->                                      
+                                            <p>
+                                                <picture>
+                                                    <source srcset="img/hebergements/amina_mob.jpg" media="(max-width: 717px)">
+                                                    <img class="img1" src="img/hebergements/amina.jpg" alt="Photo 'Hôtel chez Amina'" />
+                                                </picture>
+                                            </p>
+                                                <h2>Hôtel chez Amina</h2>                                            
+                                                    <p class="mots">Nuit à partir de 96€</p>
+                                                        <span class="star_st fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                                        <span class="star fas fa-star fa-xs"></span>
+                                        </div> <!--tag Etiquette Hotel-->                
+                                    </a>
+
+                                </div><!--cn element 3-->
+
+                            </div><!--cntr Hotel-->
+
+                            <p id="aff_plus"><a href="construction.html" title="Afficher plus">Afficher plus</a></p>
+
+                </div>                                                                  <!--elt3 element 1 conteneur 3 "HEBERGEMENT"-->
+
+                    <div class="elt3">                                                      <!--element 2 conteneur 3 "LES PLUS POPULAIRES"-->
+
+                        <div id="conteneur4"><!--Titre + Icone flèche-->
+
+                            <h1 id="titre_pop">Les plus populaires</h1>
+                                <div id="arrow"><span class="fas fa-chart-line fa-lg"></span>
+                                </div>
+
+                        </div><!--conteneur4 Titre + Icone flèche-->
+
+                        <div id="cont4bis"><!--Hotel "les plus populaires" + legende-->      
+
+                            <a class="full_tag" href="construction.html">
+                                <div class="tag4"><!--Etiquette hotel-->
+                                    <p>
+                                        <img class="img2" src="img/hebergements/soleil.jpg" alt="Photo 'Hôtel Le soleil du matin'"/>
+                                    </p>       
+
+                                    <div class="elt4">                                
+                                        <h2>Hôtel Le soleil du <br /> matin</h2>                                            
+                                            <p class="mots_bis">Nuit à partir de 128€</p>
+                                                <span class="star_st_pop fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                    </div>   <!--elt4-->  
+
+                                </div> <!--tag4 Etiquette hotel-->
+                            </a>
+                            
+        
+                            <a class="full_tag" href="construction.html">
+                                <div class="tag4">
+                                    <p>
+                                        <img class="img2" src="img/hebergements/coeur_eau.jpg" alt="Photo 'Au coeur de l'eau' Chambres d'hôtes" />
+                                    </p>
+
+                                    <div class="elt4">
+                                        <h2>Au coeur de l'eau<br />Chambres d'hôtes</h2>                                            
+                                            <p class="mots_bis">Nuit à partir de 71€</p>
+                                                <span class="star_st_pop fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="star fas fa-star fa-xs"></span>
+                                                <span class="empty fas fa-star fa-xs"></span>
+                                    </div> <!--elt4-->
+                                </div> <!--tag4 Etiquette hotel-->
+                            </a>
+
+                            <a class="full_tag" href="construction.html">
+                                <div class="tag4">
+                                    <p>
+                                        <img class="img2" src="img/hebergements/bleu_blanc.jpg" alt="Photo 'Hôtel Tout bleu et Blanc'" />
+                                    </p>
+
+                                <div class="elt4">
+                                    <h2>Hôtel Tout bleu et <br />Blanc</h2>                                           
+                                        <p class="mots_bis">Nuit à partir de 68€</p>
+                                            <span class="star_st_pop fas fa-star fa-xs"></span>
+                                            <span class="star fas fa-star fa-xs"></span>
+                                            <span class="star fas fa-star fa-xs"></span>
+                                            <span class="star fas fa-star fa-xs"></span>
+                                            <span class="empty fas fa-star fa-xs"></span>
+                                </div><!--elt4-->
+
+                                </div> <!--tag4 Etiquette hotel-->
+                            </a>
+
+                        </div> <!--cont4bis Hotel "les plus populaires" + legende-->
+                   
+                    </div>                                                                      <!--elt3 element 3 conteneur 3 "les plus populaires"-->
+                </div><!--conteneur3-->
+
+            </section>
+
+<!--SECTION "ACTIVITES"-->
+
+            <section id="activites">
+            
+                <h1 id="act">Activités à Marseille</h1>
+
+                <div id="conteneur5">                           <!--Conteneur ACITIVITES-->
+
+                    <div class="elt5"> <!-- ELEMENT 1 conteneur 5-->
+                        <a href="construction.html">
+                        <div class="tag5">
+                            <p>
+                                <picture>
+                                    <source srcset="img/activites/vieux_port_mob.jpg" media="(max-width: 717px)">
+                                    <img class="img3" src="img/activites/vieux_port.jpg" alt="Photo 'Vieux Port'" />
+                                </picture>
+                            </p>
+                            <h2>Vieux Port</h2>
+                        </div><!--tag3-->
+                        </a>
+                    </div><!--elt5 ELEMENT 1 conteneur 5-->
+
+                    <div class="elt5"><!-- ELEMENT 2 conteneur 5-->
+                        <a href="construction.html">
+                            <div class="tag5">
+                                <p>
+                                    <picture>
+                                        <source srcset="img/activites/pomegues_mob.jpg" media="(max-width: 717px)">
+                                        <img class="img6" src="img/activites/pomegues.jpg" alt="Photo 'Fort de Pomègues'"/>
+                                    </picture>
+                                </p>
+                                <h2>Fort de Pomègues</h2>
+                            </div><!--tag3-->
+                        </a>
+
+                        <a href="construction.html">
+                            <div class="tag5">
+                                <p>
+                                    <picture>
+                                        <source srcset="img/activites/frioul_mob.jpg" media="(max-width: 717px)">
+                                    <img class="img4" src="img/activites/frioul.jpg" alt="Photo 'Îles du Frioul'"/>
+                                    </picture>
+                                </p>
+    
+                                <h2>Îles du Frioul</h2>
+                            </div><!--tag3-->
+                        </a>
+                    </div><!--elt5 ELEMENT 2 conteneur 5-->
+
+                    <div class="elt5"><!-- ELEMENT 3 conteneur 5-->
+                        <a href="construction.html">
+                            <div class="tag5">
+                            <p>
+                                <picture>
+                                    <source srcset="img/activites/calanques_mob.jpg" media="(max-width: 717px)">
+                                    <img class="img5" src="img/activites/calanques.jpg" alt="Photo 'Parc National des Calanques'" />
+                                </picture>
+                            </p>
+                                <h2>Parc National des Calanques</h2>
+                            </div><!--tag3-->
+                        </a>
+                    </div><!--elt5 ELEMENT 3 conteneur 5-->
+
+                    <div class="elt5"><!-- ELEMENT 4 conteneur 5-->
+                        <a href="construction.html">
+                            <div class="tag5 dames">
+                                <p>
+                                    <picture>
+                                        <source srcset="img/activites/notre_dame_mob.jpg" media="(max-width: 717px)">
+                                        <img class="img6" src="img/activites/notre_dame.jpg" alt="Photo 'Notre-Dame-de-la-Garde'" />
+                                    </picture>
+                                </p>
+                                <h2>Notre-Dame-de-la-Garde</h2>
+                            </div><!--tag3-->
+                        </a>
+
+                        <a href="construction.html">
+                            <div class="tag5">
+                                <p>
+                                    <picture>
+                                        <source srcset="img/activites/longchamp_mob.jpg" media="(max-width: 717px)">
+                                        <img src="img/activites/longchamp.jpg" alt="Photo 'Parc Longchamp'"/>
+                                    </picture>
+                                </p>
+                                <h2>Parc Longchamp</h2>
+                            </div><!--tag3-->
+                        </a>
+                    </div><!--elt5 ELEMENT 4 conteneur 5-->
+
+                </div>                                      <!--conteneur5 ACTIVITES-->
+            </section>
+        </div><!--Bloc_page-->
+
+
+<!--FOOTER-->
+
+            <footer>
+                <div id="conteneur6">                           <!--conteneur 6 Footer-->
+
+                    <div class="elt6"><!--Element 1 -->
+                        <h3>A propos</h3>
+                            <p>
+                                <a class="footer_color" href="construction.html">Fonctionnement du site<br /></a>
+                            </p>
+                            <p>
+                                <a class="footer_color" href="construction.html">Conditions générales de vente<br /></a>
+                            </p>
+                            <p>
+                                <a class="last footer_color" href="construction.html">Données et confidentialité<br /></a>
+                            </p>
+                    </div><!--elt6 Element 1-->
+
+                    <div class="elt6"><!--Element 2-->
+
+                        <h3>Nos hébergements</h3>
+                            <p>
+                                <a class="footer_color" href="construction.html">Charte qualité<br /></a>
+                            </p>
+                            <p>
+                                <a class="footer_color" href="construction.html">Soumettre votre hôtel<br /></a>
+                            </p>
+                    </div><!--elt6 Element 2-->
+
+                    <div class="elt6"><!--Element 3-->
+
+                        <h3>Assistance</h3>
+                            <p>
+                                <a class="footer_color" href="construction.html">Centre d'aide<br /></a>
+                            </p>
+                            <p>
+                                <a class="footer_color" href="construction.html">Nous contacter<br /></a>
+                            </p>
+                    </div><!--elt6 Element 3-->
+
+                </div>                                           <!--conteneur 6 Footer-->
+            </footer>
+
+        </body>
+</html>
